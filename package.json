@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "prettier": "^3.4.2",
+    "stylelint": "^16.11.0"
+  },
+  "name": "slozhno-sosredotochitsya-fd",
+  "description": "https://github.com/AlexKolbe/slozhno-sosredotochitsya-fd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo 'Hi!'",
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint '**/*.css'",
+    "lintfix": "stylelint '**/*.css' --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexKolbe/slozhno-sosredotochitsya-fd.git"
+  },
+  "author": "Alexandr Kolesnikov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexKolbe/slozhno-sosredotochitsya-fd/issues"
+  },
+  "homepage": "https://github.com/AlexKolbe/slozhno-sosredotochitsya-fd#readme"
+}
