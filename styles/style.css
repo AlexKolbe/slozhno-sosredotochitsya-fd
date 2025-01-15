@@ -4,6 +4,9 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 
   padding: 20px;
+
+  /* Можно лучше:
+  В качестве альтернативного шрифта по типу засечек можно использовать monospace, можно подправить для всех font-family */
   font-family: "IBM Plex mono", monospace;
   font-size: 18px;
   line-height: 23px;
@@ -72,12 +75,14 @@
 .header .page-title {
   position: relative;
   left: -20px;
+  top: -7px;
 }
 
-.header__quote {
+.header__text-wrapper {
   justify-self: end;
   align-items: center;
   width: 50%;
+  margin-block-start: 108px;
 }
 
 /* DECORATION #1 */
@@ -94,7 +99,7 @@
   align-items: center;
   top: 1px;
   right: 9px;
-  color: var(--accent-color);
+  color: rgb(var(--accent-color));
 }
 
 .decor-element::after {
@@ -103,12 +108,14 @@
   inline-size: 9px;
   block-size: 9px;
   margin-inline-start: 10px;
-  background: var(--accent-color);
-  box-shadow: 0 0 4px 2px var(--accent-color);
+  background: rgb(var(--accent-color));
+  box-shadow: 0 0 4px 2px rgb(var(--accent-color));
   border-radius: 50%;
 }
 
-.header::after {
+/* декоративные уголки через  decorated-zone */
+
+/* .header::after {
   content: '';
   position: absolute;
   inline-size: 25px;
@@ -128,7 +135,7 @@
   bottom: 0;
   border: solid var(--accent-color);
   border-width: 0 0 1px 1px;
-}
+} */
 
 .decorated-zone::after {
   content: '';
@@ -156,7 +163,7 @@
 
 .content-section {
   display: grid;
-  grid-template-columns: 33% auto;
+  grid-template-columns: 32% auto;
   margin-block-end: 80px;
   gap: 20px;
 }
@@ -180,6 +187,8 @@
     grid-column: 1 / 4;
     inline-size: 30%;
   }
+
+  
 }
 
 .recomendations {
@@ -208,7 +217,17 @@
 
 .main-article__text {
   line-height: 130%;
+}
 
+/* 
+Сетку проекта должна реагировать гибко на изменение кол-во контента
+при увеличении кол-во параграфов,
+ отступы между параграфами необходимо сохранять
+  https://disk.yandex.com/i/mSPmk1SFdCPvOQ
+*/
+
+.main-article__text:not(:last-child) {
+  margin-block-end: 20px;
 }
 
 .main-article__link {
