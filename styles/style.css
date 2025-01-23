@@ -310,7 +310,7 @@
 
   .header {
     grid-template-rows: 43% min-content 43%;
-    margin-block-end: 40%;
+    /* margin-block-end: 40%; */
 
     .page-title {
       top: 0;
@@ -330,7 +330,10 @@
     flex-direction: column;
   }
 
-  
+  .content-section {
+    grid-template-columns: 235px auto;
+    margin-block-end: 80px;
+  }
 
   .dificulties {
     gap: 20px;
@@ -339,7 +342,7 @@
   .reasons {
 
     .main-article {
-      grid-column: 1 / 4;
+      /* grid-column: 1 / 4; */
       grid-row: auto;
     }
   }
