@@ -174,7 +174,7 @@
 }
 
 .dificulties {
-  
+
   .main-article {
     grid-column: 1;
   }
@@ -187,13 +187,19 @@
     grid-column: 1 / 4;
     inline-size: 30%;
   }
-  
-  grid-template-columns: 315px 315px 315px;
-  margin-block-end: 80px; 
+
+  .reasons-wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 315px 315px 315px;
+    gap: 20px;
+  }
+
+  margin-block-end: 80px;
 }
 
 .recommendations {
-  
+
   .main-article {
     grid-column: 1;
   }
@@ -251,12 +257,13 @@
 .gallery {
   gap: 20px;
 
-  .content-section__title {
+  .main-article__title {
     grid-column: 1 / 4;
+    block-size: auto;
   }
 
   .main-article__title {
-    margin-block-end: 0;  
+    margin-block-end: 0;
   }
 
 }
@@ -341,18 +348,37 @@
 
   .reasons {
 
-    .main-article {
-      /* grid-column: 1 / 4; */
+    
+    .content-section__title {
+      grid-column: 1;
+      width: 100%;
+    }
+    
+    .reasons-wrapper {
+      display: grid;
+      grid-column: 1;
       grid-row: auto;
+      grid-template-columns: 708px;
+
+      .main-section__article {
+        grid-column: 1/3;
+        grid-row: auto;
+      }
     }
+
+
+
   }
 
-  .recomendations {
+  .recommendations {
 
-    .main-article {
-      padding-inline-start: 7px;
-    }
-  }
+.content-section {
+  margin-block-end: 81px;
+
+}    
+
+    
+
 }
 
 /* < 768 POCKET */
