@@ -6,7 +6,7 @@
 
 :root.theme-dark {
   --accent-color: 255 0 112;
-  --main-text-color: 241, 178, 206;
+  --main-text-color: 241 178 206;
   --subtitle-color: rgb(0 0 40);
   --title-color: rgb(219 0 255);
   --menu-item-color: rgb(var(--accent-color));
@@ -34,29 +34,36 @@
   }
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
 
   :root {
-    --accent-color: 255 0 112;
-    --main-text-color: 241, 178, 206;
-    --subtitle-color: rgb(0 0 40);
-    --title-color: rgb(219 0 255);
-    --menu-item-color: rgb(var(--accent-color));
-    --menu-item-hover: rgb(var(--accent-color) / 0.4);
-    --section-title-color: rgb(var(--accent-color));
-    --link-action-color: rgb(var(--accent-color));
-    --decor-element-color: rgb(var(--accent-color));
-  
-    background: url(../images/cover-image-dark.png) no-repeat center / cover fixed;
-  }
+  --accent-color: 255 0 112;
+  --main-text-color: 241, 178, 206;
+  --subtitle-color: rgb(0 0 40);
+  --title-color: rgb(219 0 255);
+  --menu-item-color: rgb(var(--accent-color));
+  --menu-item-hover: rgb(var(--accent-color) / 0.4);
+  --section-title-color: rgb(var(--accent-color));
+  --link-action-color: rgb(var(--accent-color));
+  --decor-element-color: rgb(var(--accent-color));
 
-  .page {
-    background: url(../images/cover-image-dark.png) no-repeat center / cover
-      fixed;
-      background-color: #000028;
-  }
+  background: url(../images/cover-image-dark.png) no-repeat center / cover fixed;
+  background-color: #000028;
+
+
+}
+
+.page.theme-dark {
+  /* сохраните этот селектор в приведённом виде.
+    Так стили написанные ниже будут иметь больший вес,
+    чем стили в медиазапросе предпочтений пользователя
+  */
+
+  background: url(../images/cover-image-dark.png) no-repeat center / cover fixed;
+  background-color: #000028;
 
   .decor-element {
     display: flex;
   }
-} */
+}
+}

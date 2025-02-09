@@ -9,11 +9,12 @@
   --main-text-color: 53 52 48;
   --title-color: rgb(255 194 230);
   --subtitle-color: rgb(var(--main-text-color));
-  --menu-item-color: rgb(var(--accent-color));
-  --menu-item-hover: rgb(var(--accent-color) / 0.4);
+  --menu-item-color: rgb(var(--main-text-color));
+  --menu-item-hover: rgb(var(--main-text-color) / 0.4);
   --section-title-color: rgb(var(--main-text-color));
   --link-action-color: rgb(var(--accent-color));
-  --decor-element-color: rgb(var(--accent-color));
+  --decor-element-color: rgb(var(--main-text-color));
+
 
   background: url(../images/cover-image-light.png) no-repeat center / cover fixed;
   background-color: #fff1f7;
@@ -29,13 +30,14 @@
     --accent-color: 255 141 203;
     --main-text-color: 53 52 48;
     --title-color: rgb(255 194 230);
-    --subtitle-color: rgb(0 0 40);
-    --menu-item-color: rgb(var(--accent-color));
-    --menu-item-hover: rgb(var(--accent-color) / 0.4);
-    --section-title-color: rgb(var(--accent-color));
+    --subtitle-color: rgb(var(--main-text-color));
+    --menu-item-color: rgb(var(--main-text-color));
+    --menu-item-hover: rgb(var(--main-text-color) / 0.4);
+    --section-title-color: rgb(var(--main-text-color));
     --link-action-color: rgb(var(--accent-color));
-    --decor-element-color: rgb(var(--accent-color));
-
+    --decor-element-color: rgb(var(--main-text-color));
+  
+  
     background: url(../images/cover-image-light.png) no-repeat center / cover fixed;
     background-color: #fff1f7;
 
