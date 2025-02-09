@@ -197,9 +197,9 @@
 
   .reasons-wrapper {
     display: grid;
-    grid-auto-flow: row;
-    grid-template-columns: 315px 315px 315px;
+    grid-template-columns: repeat(3, clamp(315px, calc(100vw / 3.3), 100vw));
     gap: 20px;
+    grid-auto-flow: row;
   }
 
   margin-block-end: 80px;
