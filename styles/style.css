@@ -206,16 +206,15 @@ body {
     inline-size: 30%;
   }
 
-  grid-template-columns: auto;
+  margin-block-end: 80px;
 
-  /* .reasons-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, clamp(315px, calc(100vw / 3.3), 100vw));
-    gap: 20px;
-    grid-auto-flow: row;
-  } */
+}
 
-  margin-block-end: 57px;
+.reasons.content-section {
+  grid-template-columns: repeat(3, 1fr);
+
+  /* clamp(236px, calc(100vw / 3.3), 315px) 2fr; */
+
 }
 
 .recommendations {
@@ -335,6 +334,15 @@ body {
   padding-block-end: 0;
 }
 
+.footer.decorated-zone::before {
+  bottom: 20px;
+}
+
+.footer.decorated-zone::after {
+  top: 20px;
+}
+
+
 
 
 /* < 1024 TABLET */
@@ -343,7 +351,6 @@ body {
 
   .header {
     grid-template-rows: 43% min-content 43%;
-    /* margin-block-end: 40%; */
 
     .page-title {
       top: 5px;
@@ -362,6 +369,7 @@ body {
 
   .header__theme-menu-list {
     flex-direction: column;
+    gap: 13px;
   }
 
   .content-section {
@@ -380,21 +388,25 @@ body {
     margin-block-end: 82px;
   }
 
+  .recommendations.content-section {
+    margin-block-end: 62px;
+  }
 
-  /* .content-section__title {
-      grid-column: 1;
-      width: 100%;
-    } */
+  .gallery.content-section {
+    margin-block-end: 70px;
+  }
 
+  .footer.decorated-zone::after {
+    top: 15px;
+  }
+
+  .footer.decorated-zone::before {
+    bottom: 23px;
+  }
 
 }
 
-.recommendations.content-section {
 
-
-  margin-block-end: 62px;
-
-}
 
 
 
@@ -427,6 +439,7 @@ body {
   .header__theme-menu {
     padding-block-end: 0;
   }
+  
 
   .header .page-title {
     position: static;
@@ -460,7 +473,7 @@ body {
   }
 
   .reasons {
-    /* gap: 23px; */
+
 
     .content-section__title {
       grid-column: 1fr;
@@ -492,7 +505,7 @@ body {
     }
   }
 
-  .content-section.recomendations {
+  .content-section.recommendations {
     margin-block-end: 52px;
   }
 
@@ -502,6 +515,15 @@ body {
     flex-direction: column;
     padding-block-end: 0;
     gap: 10px;
+    margin-block-end: 51px;
+  }
+
+  .footer.decorated-zone::before {
+    bottom: 20px;
+  }
+
+  .footer.decorated-zone::after {
+    top: 0;
   }
 
 
