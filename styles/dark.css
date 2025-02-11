@@ -14,6 +14,7 @@
   --section-title-color: rgb(var(--accent-color));
   --link-action-color: rgb(var(--accent-color));
   --decor-element-color: rgb(var(--accent-color));
+  --rec-visibility: visible;
 
   background: url(../images/cover-image-dark.png) no-repeat center / cover fixed;
 
@@ -28,10 +29,13 @@
 
   background: url(../images/cover-image-dark.png) no-repeat center / cover fixed;
   background-color: #000028;
+  --rec-visibility: visible;
+  
 
-  .decor-element {
+  /* .decor-element {
     display: flex;
-  }
+    
+  } */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -46,6 +50,7 @@
   --section-title-color: rgb(var(--accent-color));
   --link-action-color: rgb(var(--accent-color));
   --decor-element-color: rgb(var(--accent-color));
+  --rec-visibility: visible;
 
   background: url(../images/cover-image-dark.png) no-repeat center / cover fixed;
   background-color: #000028;
@@ -62,8 +67,8 @@
   background: url(../images/cover-image-dark.png) no-repeat center / cover fixed;
   background-color: #000028;
 
-  .decor-element {
+  /* .decor-element {
     display: flex;
-  }
+  } */
 }
 }

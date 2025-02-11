@@ -14,14 +14,15 @@
   --section-title-color: rgb(var(--main-text-color));
   --link-action-color: rgb(var(--accent-color));
   --decor-element-color: rgb(var(--main-text-color));
+  --rec-visibility: hidden;
 
 
   background: url(../images/cover-image-light.png) no-repeat center / cover fixed;
   background-color: #fff1f7;
 
-  .decor-element {
+  /* .decor-element {
     display: none;
-  }
+  } */
 }
 
 @media (prefers-color-scheme: light) {
@@ -36,14 +37,15 @@
     --section-title-color: rgb(var(--main-text-color));
     --link-action-color: rgb(var(--accent-color));
     --decor-element-color: rgb(var(--main-text-color));
+    --rec-visibility: hidden;
   
   
     background: url(../images/cover-image-light.png) no-repeat center / cover fixed;
     background-color: #fff1f7;
 
-    .decor-element {
+    /* .decor-element {
       display: none;
-    }
+    } */
 
   }
 }
