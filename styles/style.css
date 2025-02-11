@@ -1,6 +1,9 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-/* * { outline: 1px solid #fff; }; */
+body {
+  margin: 0 auto;
+  padding: 0;
+}
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
@@ -14,9 +17,6 @@
   line-height: 23px;
   color: rgb(var(--main-text-color));
   background-attachment: fixed;
-
-  /* display: flex;
-  flex-direction: column; */
 
 }
 
@@ -180,7 +180,7 @@
 
 .content-section {
   display: grid;
-  grid-template-columns: clamp(315px, calc(100vw / 3.3), 100vw) auto;
+  grid-template-columns: 315px auto;
   grid-template-rows: 1fr auto;
   margin-block-end: 61px;
   gap: 20px;
@@ -205,6 +205,8 @@
     grid-column: 1 / 4;
     inline-size: 30%;
   }
+
+  grid-template-columns: auto;
 
   /* .reasons-wrapper {
     display: grid;
